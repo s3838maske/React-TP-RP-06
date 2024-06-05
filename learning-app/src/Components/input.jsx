@@ -1,17 +1,12 @@
 function input() {
     return (
-        <div>
-         <label for="username">Username</label>
-        <input type="text" id="username" name="username" required/>
+        <div style={{display:"flex", flexDirection:"column"}}>
         
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required/>
+        <label for="email" style={{fontSize:"20px"}}>Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter Username"  style={{padding:"10px", margin: "15px 0" , borderRadius: "8px"}} required/>
         
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required/>
-        
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" id="confirm-password" name="confirm-password" required/>
+        <label for="password" style={{fontSize:"20px"}}>Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter Password" style={{padding:"10px", margin: "15px 0" , borderRadius: "8px"}} required/>
         </div>
     );
   }
